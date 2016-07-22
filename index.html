@@ -17,27 +17,22 @@
                     <source src="https://we.tl/vC5BJRkBoe" type="video/mp4">
                 </video> 
             </div>
-            <div id="formSec" style="margin:auto">
+            <div id="formSec" style="margin:auto" ng-contoller="formCtrl">
                  <form class="form-horizontal" id="MailingForm" >
                     <div class="form-group">
                         <div class="col-sm-8 col-xs-6 col-xsd-6">
-                            <input type="email" placeholder="Email Address" class="form-control">
+                            <input type="email" placeholder="Email Address" class="form-control" ng-model="email">
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-4 col-xs-4 col-xsd-4">
-                            <input type="text" placeholder="First Name" class="form-control">
+                            <input type="text" placeholder="First Name" class="form-control" ng-model="firstName">
                         </div>
                         <div class="col-sm-4 col-xs-4 col-xsd-4">
-                            <input type="text" placeholder="Last Name" class="form-control">
+                            <input type="text" placeholder="Last Name" class="form-control" ng-model="lastName">
                         </div>
                         <div class="col-sm-4 col-xs-4 col-xsd-4">
-                            <select placeholder="Country" class="form-control">
-                                <option value="India">India</option>
-                                <option value="Pakistan">Pakistan</option>
-                                <option value="Nepal">Nepal</option>
-                                <option value="UK">UK</option>
-                            </select>
+                            <select placeholder="Country" ng-model="selectedCountry" ng-options="item for item in countries"></select>
                         </div>
                     </div>
                  </form>
