@@ -1,15 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="testApp">
     <head>
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
         <title>Demo App</title>
     </head>
     <body>
         <div class="container">
-            <div id="headerSec">
+            <div id="headerSec" style="text-align:center">
                 <h1>Tesla</h1>
+            </div>
+            <div id="videoSec" class="col-sm-8 col-xs-6" style="margin:auto">
+                <video width="320" height="240" autoplay>
+                    <source src="https://we.tl/vC5BJRkBoe" type="video/mp4">
+                </video> 
+            </div>
+            <div id="formSec" style="margin:auto">
+                 <form class="form-horizontal" id="MailingForm" >
+                    <div class="form-group">
+                        <div class="col-sm-8 col-xs-6 col-xsd-6">
+                            <input type="email" placeholder="Email Address" class="form-control">
+                        </div>
+                        <div class="col-sm-4 col-xs-4 col-xsd-4">
+                            <input type="text" placeholder="First Name" class="form-control">
+                        </div>
+                        <div class="col-sm-4 col-xs-4 col-xsd-4">
+                            <input type="text" placeholder="Last Name" class="form-control">
+                        </div>
+                        <div class="col-sm-4 col-xs-4 col-xsd-4">
+                            <select placeholder="Country" class="form-control">
+                                <option value="India">India</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Pakistan">Nepal</option>
+                            </select>
+                        </div>
+                    </div>
+                 </form>
             </div>
         </div>
     </body>
